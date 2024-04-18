@@ -53,9 +53,9 @@ export default function Home() {
           JavaScript is the{" "}
           <strong>language that makes webpages come alive</strong> by adding
           interactivity, animation and is the engine behind your favourite
-          websites. It's a set of instructions that web browsers understand,
+          websites. It is a set of instructions that web browsers understand,
           allowing you to create all manner of things on your webpages! While
-          you won't see the code itself, it's what runs behind the scenes to
+          you do not see the code itself, this is what runs behind the scenes to
           make these features work.
         </p>
         <div className="js">
@@ -70,10 +70,9 @@ export default function Home() {
           <br></br>It achieves this through{" "}
           <strong>static type checking</strong> - in plain English it wants you
           to define the type of information you are inputting so that it can
-          automate the checking of that type later on and make sure it hasn't
+          automate the checking of that type later on and make sure it has not
           changed. Why? Computers will interpret your code very literally, and
-          if you've given the wrong type to something it will most likely throw
-          up some errors!
+          if given the wrong type it will most likely throw up some errors!
         </p>
 
         <h3>Types</h3>
@@ -83,7 +82,7 @@ export default function Home() {
         </p>
         <ul>
           <li>
-            <b>string:</b> represents textual data e.g. "Hello world!"
+            <b>string:</b> represents textual data e.g. Hello world!
           </li>
           <li>
             <b>number:</b> represents numerical data e.g. 42
@@ -106,7 +105,7 @@ export default function Home() {
           <li>
             <b>Improved code clarity:</b> By explicitly stating the type of a
             variable, you make your code easier to understand for yourself and
-            others. It's immediately clear what kind of data the variable
+            others. It is immediately clear what kind of data the variable
             represents.
           </li>
           <li>
