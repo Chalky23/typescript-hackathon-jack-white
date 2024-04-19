@@ -9,3 +9,5 @@ Beginners with no prior knowledge of JavaScript or TypeScript.
 - Be comfortable working with objects and arrays in JavaScript.
 - Write simple functions in JavaScript.
 - Grasp the benefits of using TypeScript with JavaScript code.
+
+## To view this online, go to https://typescript-hackathon-jack-white.vercel.app/
