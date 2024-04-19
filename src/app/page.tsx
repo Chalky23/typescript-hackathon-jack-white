@@ -56,7 +56,15 @@ export default function Home() {
         <h2>Is this for you?</h2>
         <p>
           This article on learning TypeScript alongside the basics of JavaScript
-          is perfect for anyone new to either JavaScript or TypeScript.
+          is perfect for anyone starting to learn JavaScript or completely new
+          to TypeScript.
+          <br /> <br />
+          You are going to have to understand the basics of JavaScript, so why
+          not compliment it with knowledge of TypeScript from the off! Let us
+          dive in!
+        </p>
+        <p className="emoji" id="introemoji">
+          🐬
         </p>
         <h2>What will you learn?</h2>
         <ul>
@@ -110,7 +118,9 @@ export default function Home() {
           changed. Why? Computers will interpret your code very literally, and
           if given the wrong type it will most likely throw up some errors!
         </p>
-
+        <p className="emoji" id="typeemoji">
+          🐟🐟🐟
+        </p>
         <h3>Types</h3>
         <p>
           There are several basic <b>types</b> available when using JavaScript,
@@ -157,7 +167,7 @@ export default function Home() {
             efficiency.
           </li>
         </ul>
-
+        <p className="emoji">🦈</p>
         <h2>Variables</h2>
         <p>
           Now to actually use some data in JavaScript. Say we want to write a
@@ -222,7 +232,9 @@ export default function Home() {
           height="250"
           width="280"
         />
-
+        <p className="emoji" id="objectemoji">
+          🐠🐠
+        </p>
         <h3>Arrays</h3>
         <p>
           An array is an ordered collection of things. It is ordered by the
@@ -247,7 +259,7 @@ export default function Home() {
           height="80"
           width="480"
         />
-
+        <p className="emoji">🐟</p>
         <h3>Your Task</h3>
         <p>
           Time to put this into practice. Follow this{" "}
@@ -286,7 +298,9 @@ export default function Home() {
             {hintContent5 && <div>{hintContent5}</div>}
           </li>
         </ol>
-
+        <p className="emoji" id="arrayemoji">
+          🐡
+        </p>
         <h2>Hungry for more?</h2>
         <p>
           Take a look at these resources for some of the best learning around
@@ -327,6 +341,9 @@ export default function Home() {
       </div>
       <br />
       <br />
+      <p className="emoji" id="footeremoji">
+        🦀 🪸 🐙{" "}
+      </p>
       <div className="footer"></div>
       <br />
     </div>

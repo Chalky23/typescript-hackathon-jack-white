@@ -86,3 +86,27 @@ a {
     width: 90vw;
     margin-left: 4vw;
 }
+
+.emoji {
+    font-size: xx-large;
+}
+
+#footeremoji {
+    text-align: center;
+}
+
+#arrayemoji {
+    text-align: right;
+}
+
+#objectemoji {
+    text-align: center;
+}
+
+#typeemoji {
+    text-align: right;
+}
+
+#introemoji {
+    font-size: xx-large;
+}
