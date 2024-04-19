@@ -59,9 +59,9 @@ export default function Home() {
           is perfect for anyone starting to learn JavaScript or completely new
           to TypeScript.
           <br /> <br />
-          You are going to have to understand the basics of JavaScript, so why
-          not compliment it with knowledge of TypeScript from the off! Let us
-          dive in!
+          You are going to have to understand the basics of JavaScript, and
+          building on that foundation with TypeScript from the start will be
+          beneficial! Let us dive in!
         </p>
         <p className="emoji" id="introemoji">
           🐬
