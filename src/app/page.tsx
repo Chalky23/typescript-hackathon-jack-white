@@ -1,7 +1,44 @@
+"use client";
+
 import Image from "next/image";
-import styles from "./page.module.css";
+import React from "react";
+import { useState } from "react";
 
 export default function Home() {
+  const [hintContent1, setHintContent1] = useState<
+    string | React.JSX.Element | null
+  >(null);
+  const [hintContent2, setHintContent2] = useState<
+    string | React.JSX.Element | null
+  >(null);
+  const [hintContent3, setHintContent3] = useState<
+    string | React.JSX.Element | null
+  >(null);
+  const [hintContent4, setHintContent4] = useState<
+    string | React.JSX.Element | null
+  >(null);
+  const [hintContent5, setHintContent5] = useState<
+    string | React.JSX.Element | null
+  >(null);
+
+  const Content_1: React.JSX.Element = <p className="hint">use a string!</p>;
+  const Content_2: React.JSX.Element = (
+    <p className="hint">define the name of your variable and use a number!</p>
+  );
+  const Content_3: React.JSX.Element = (
+    <p className="hint">use a boolean operator!</p>
+  );
+  const Content_4: React.JSX.Element = (
+    <p className="hint">
+      remember to interface the object and then input parameters after
+    </p>
+  );
+  const Content_5: React.JSX.Element = (
+    <p className="hint">
+      define the string inputs, then use them in the array itself
+    </p>
+  );
+
   return (
     <div className="page">
       <div className="header">
@@ -64,8 +101,8 @@ export default function Home() {
         <p>
           TypeScript is not a separate language, rather it is a{" "}
           <strong>superset</strong>. This means that all JavaScript in a
-          TypeScript file is valid, but it now wants extra to keep you working
-          safely and efficiently.<br></br>
+          TypeScript file is valid, but it now wants extra notation to keep you
+          working safely and efficiently.<br></br>
           <br></br>It achieves this through{" "}
           <strong>static type checking</strong> - in plain English it wants you
           to define the type of information you are inputting so that it can
@@ -138,7 +175,7 @@ export default function Home() {
           JavaScript understands that there is a string here. But it will not
           throw an error if that data is redefined later on until we try and run
           the code. It would be better if we could check this as we are writing
-          right? <br />
+          surely? <br />
           <br />
           Enter TypeScript, where we can now define the type and it will do our
           <b> static type checking</b> for us. The way we define this is as
@@ -197,7 +234,7 @@ export default function Home() {
           src="/js-example-4.png"
           alt="code example"
           height="60"
-          width="280"
+          width="350"
         />
         <p>
           In JavaScript, we need to define what types are going to be in the
@@ -208,35 +245,47 @@ export default function Home() {
           src="/ts-example-4.png"
           alt="code example"
           height="80"
-          width="420"
+          width="480"
         />
 
         <h3>Your Task</h3>
         <p>
           Time to put this into practice. Follow this{" "}
-          <a href="https://www.typescriptlang.org/play">link</a> to go to an
-          interactive sandbox where you can test out what you have learned. Code
-          some basic TypeScript to satisfy the following:
+          <a href="https://www.typescriptlang.org/play" target="_blank">
+            link
+          </a>{" "}
+          to go to an interactive sandbox where you can test out what you have
+          learned. Code some basic TypeScript to satisfy the following:
         </p>
-        <ul>
+        <ol className="tasks">
           <li>
-            A <b>variable</b> of name, where the value is your name.
+            A <b>variable</b> of name, where the value is your name.{" "}
+            <button onClick={() => setHintContent1(Content_1)}>Hint</button>
+            {hintContent1 && <div>{hintContent1}</div>}
           </li>
           <li>
-            A <b>variable</b> detailing the number of keys on your keyboard.
+            A <b>variable</b> detailing the number of keys on your keyboard.{" "}
+            <button onClick={() => setHintContent2(Content_2)}>Hint</button>
+            {hintContent2 && <div>{hintContent2}</div>}
           </li>
           <li>
-            A <b>variable</b> of leftHanded, where the value is true or false.
+            A <b>variable</b> of leftHanded, where the value is true or false.{" "}
+            <button onClick={() => setHintContent3(Content_3)}>Hint</button>
+            {hintContent3 && <div>{hintContent3}</div>}
           </li>
           <li>
             An <b>object</b> detailing your favourite animal. Include values for
             colour, where it lives, and a boolean for if it is an endangered
-            species or not.
+            species or not.{" "}
+            <button onClick={() => setHintContent4(Content_4)}>Hint</button>
+            {hintContent4 && <div>{hintContent4}</div>}
           </li>
           <li>
-            An <b>array</b> which has the items of your last shopping trip.
+            An <b>array</b> which has the items of your last shopping trip.{" "}
+            <button onClick={() => setHintContent5(Content_5)}>Hint</button>
+            {hintContent5 && <div>{hintContent5}</div>}
           </li>
-        </ul>
+        </ol>
 
         <h2>Hungry for more?</h2>
         <p>
@@ -246,30 +295,40 @@ export default function Home() {
         <ul>
           <li>
             Test your coding in this sandbox environment!{" "}
-            <a href="https://www.typescriptlang.org/play">
+            <a href="https://www.typescriptlang.org/play" target="_blank">
               www.typescriptlang.org/play
             </a>
           </li>
           <li>
             It is always good to start with the official docs:{" "}
-            <a href="https://www.typescriptlang.org/docs/">
+            <a href="https://www.typescriptlang.org/docs/" target="_blank">
               www.typescriptlang.org/docs/
             </a>
           </li>
           <li>
             One of the best resources for learning new content:{" "}
-            <a href="https://www.freecodecamp.org/news/learn-typescript-beginners-guide/">
+            <a
+              href="https://www.freecodecamp.org/news/learn-typescript-beginners-guide/"
+              target="_blank"
+            >
               www.freecodecamp.org/news/learn-typescript-beginners-guide/
             </a>
           </li>
           <li>
             Do you prefer learning by video tutorial?{" "}
-            <a href="https://www.youtube.com/watch?v=gieEQFIfgYc&ab_channel=DaveGray">
+            <a
+              href="https://www.youtube.com/watch?v=gieEQFIfgYc&ab_channel=DaveGray"
+              target="_blank"
+            >
               www.youtube.com/watch?v=gieEQFIfgYc&ab_channel=DaveGray
             </a>
           </li>
         </ul>
       </div>
+      <br />
+      <br />
+      <div className="footer"></div>
+      <br />
     </div>
   );
 }

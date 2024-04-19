@@ -4,20 +4,8 @@ body {
     line-height: 2;
 }
 
-.progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 8px;
-    background: linear-gradient(to right, #ffffff, #f08d03);
-    width: 0%;
-    z-index: 100;
-    transition: width 0.2s ease-out;
-}
-
 .page {
-    background: linear-gradient(#00a884, #090235)
-    
+    background: linear-gradient(#00a884, #090235);
 }
 
 .header {
@@ -57,10 +45,44 @@ body {
     margin-left: 20vw;
     color: white;
     margin-top: 3vh;
+    
 }
 
 .js, .ts{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+button {
+    background-color: #f08d03;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks button {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hint {
+    color:#f08d03
+}
+
+a {
+    text-decoration: none;
+    color:#f08d03
+}
+
+.footer {
+    background-color:#f08d03;
+    height: 10px;
+    width: 90vw;
+    margin-left: 4vw;
 }
